@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+body {
+  background: #eff2f1;
+  margin: 0;
+  font-family: "Inter";
+}
+.cover {
+  background-color: #3b5d50;
+  color: #eff2f1;
+  height: 600px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 86px;
+  height: 39px;
+}
+
+.logo p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.dot {
+  color: rgb(161, 149, 149);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  list-style-type: none;
+}
+
+#navLinks {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+#navIcons {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.navbar img {
+  padding: 10px;
+  height: 50px;
+}
+
+.navbar li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.homePage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 {
+  width: 350px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+
+#shopNow {
+    margin-right: 20px;
+  width: 130px;
+  height: 50px;
+  background: #f9bf29;
+  border-radius: 30px;
+}
+
+#explore {
+    margin-left: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  width: 132px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.29);
+  border-radius: 30px;
+}
+
+.couch::before {
+  content: "";
+  background-image: url("img/Dotted.png");
+  width: 258px;
+  height: 174px;
+  position: absolute;
+  z-index: 0;
+  right: 95px;
+  top: 153px;
+}
+
+#couch img {
+  width: 620px;
+  height: 481.28px;
+  position: relative;  
+  right: 35px;
+  z-index: 1;
+}
+
+.main{
+    height: 310px;
+    display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
