@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
+
+
 body {
   background: #eff2f1;
   margin: 0;
@@ -121,9 +123,212 @@ body {
   z-index: 1;
 }
 
+
+
 .main{
     height: 310px;
     display: flex;
   flex-direction: column; 
   justify-content: space-between;
 }
+
+.displayItems{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+#itemsDescription{
+  padding-left: 0;
+  padding-right: 60px;
+  width:  250px;
+}
+
+ h2{
+font-style: normal;
+font-weight: 600;
+font-size: 34px;
+line-height: 41px;
+color: #2F2F2F;
+}
+
+.itemsDescription p{  
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #6A6A6A;
+}
+
+.itemsDescription button{
+  width: 122px;
+height: 50px;
+
+background: #2F2F2F;
+border-radius: 30px;
+
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.product1, .product2{
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 600;
+font-size: 13px;
+text-align: center;
+color: #2F2F2F;
+}
+
+
+
+.product3{
+  position: relative;
+  padding-left: 30px;
+  padding-right: 0px;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  color: #2F2F2F;
+}
+
+.product1 img{
+  position: relative; 
+  z-index: 1;
+  width: 139px;
+height: 211px;
+}
+.product2 img{
+  width: 180px;
+  height: 251px;
+}
+
+.product1::before{
+  content: "";
+  background-image: url("img/Rectangle\ 4.png");
+  position: absolute;
+  top: 90px; /* Position the top of the pseudo-element 10px above the top of the parent element */
+  left: -15px; /* Position the left of the pseudo-element 10px to the left of the left of the parent element */
+  width: calc(100% + 30px); /* Set the width of the pseudo-element to be the width of the parent element plus 20px of padding on each side */
+  height: 250px;
+  border-radius: 20px;
+  z-index: 0;
+}
+.product1::after{
+  content: "";
+  background-image: url("img/Ellipse\ 58.png");
+  position: absolute;
+  z-index: 0;
+  bottom:-17px;
+  left: 42%;
+  width: 35px;
+  height: 35px;  
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.product1 span{
+  content: "";
+  background-image: url("img/Group\ 3.png");
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 47%;
+  bottom: -2%;
+  z-index: 1;
+}
+
+.items{
+  display: flex;
+}
+
+
+.whyUsImg{
+  position: relative;
+}
+
+.whyUsImg img {
+  width: 450px;
+height: 600px;
+  right: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.whyUsImg::before{
+  content: "";
+  background-image: url("img/Dot.png");
+  width: 260px;
+  height: 177px;
+  position: absolute;
+  z-index: 0;
+  left: -90px;
+  top: -15px;
+}
+
+.whyUs{
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.whyUsReasons{
+  margin-top: 80px;
+  display: flex;
+  flex-wrap:wrap;
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* or 157% */
+
+
+color: #6A6A6A;
+}
+
+.whyUsReasons div:not(.ellipse){
+  width: 200px;
+  height: 150px;
+  margin-right: 38px;
+  margin-bottom: 38px;
+}
+
+.whyUsReasons div{
+  position: relative;
+}
+
+.whyUsReasons div h5{
+ margin: 0;
+}
+
+.ellipse::before{
+  content: "";
+  background-image: url("img/Ellipse\ 59.png");
+  padding: 16.5px;
+  position: absolute;
+  z-index: 0;
+  left: 16px;
+}
+
+.whyUsDescription p{
+  width: 444px;
+  height: 42px;
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+
+color: #6A6A6A;
+}
+
+
+
+
+
