@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
-
+/* *{
+  border: 1px solid red;
+} */
 
 body {
   background: #eff2f1;
   margin: 0;
   font-family: "Inter";
 }
+
+body > div {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 .cover {
   background-color: #3b5d50;
   color: #eff2f1;
   height: 600px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .header {
@@ -85,9 +90,8 @@ body {
   font-size: 45px;
 }
 
-
 #shopNow {
-    margin-right: 20px;
+  margin-right: 20px;
   width: 130px;
   height: 50px;
   background: #f9bf29;
@@ -95,7 +99,7 @@ body {
 }
 
 #explore {
-    margin-left: 20px;
+  margin-left: 20px;
   background-color: transparent;
   color: #ffffff;
   width: 132px;
@@ -118,120 +122,119 @@ body {
 #couch img {
   width: 620px;
   height: 481.28px;
-  position: relative;  
+  position: relative;
   right: 35px;
   z-index: 1;
 }
 
-
-
-.main{
-    height: 310px;
-    display: flex;
-  flex-direction: column; 
+.main {
+  height: 310px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.displayItems{
+.displayItems {
   display: flex;
   justify-content: space-between;
   padding: 100px;
 }
 
-#itemsDescription{
+#itemsDescription {
   padding-left: 0;
   padding-right: 60px;
-  width:  250px;
+  width: 250px;
 }
 
- h2{
-font-style: normal;
-font-weight: 600;
-font-size: 34px;
-line-height: 41px;
-color: #2F2F2F;
-}
-
-.itemsDescription p{  
+h2 {
   font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-color: #6A6A6A;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  color: #2f2f2f;
 }
 
-.itemsDescription button{
+.itemsDescription p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6a6a6a;
+}
+
+.exploreBtn {
   width: 122px;
-height: 50px;
+  height: 50px;
 
-background: #2F2F2F;
-border-radius: 30px;
+  background: #2f2f2f;
+  border-radius: 30px;
 
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 28px;
-text-align: center;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.product1, .product2{
+.product1,
+.product2 {
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
   font-weight: 600;
-font-size: 13px;
-text-align: center;
-color: #2F2F2F;
+  font-size: 13px;
+  text-align: center;
+  color: #2f2f2f;
 }
 
-
-
-.product3{
+.product3 {
   position: relative;
   padding-left: 30px;
   padding-right: 0px;
   font-weight: 600;
   font-size: 13px;
   text-align: center;
-  color: #2F2F2F;
+  color: #2f2f2f;
 }
 
-.product1 img{
-  position: relative; 
+.product1 img {
+  position: relative;
   z-index: 1;
   width: 139px;
-height: 211px;
+  height: 211px;
 }
-.product2 img{
+.product2 img {
   width: 180px;
   height: 251px;
 }
 
-.product1::before{
+.product1::before {
   content: "";
   background-image: url("img/Rectangle\ 4.png");
   position: absolute;
   top: 90px; /* Position the top of the pseudo-element 10px above the top of the parent element */
   left: -15px; /* Position the left of the pseudo-element 10px to the left of the left of the parent element */
-  width: calc(100% + 30px); /* Set the width of the pseudo-element to be the width of the parent element plus 20px of padding on each side */
+  width: calc(
+    100% + 30px
+  ); /* Set the width of the pseudo-element to be the width of the parent element plus 20px of padding on each side */
   height: 250px;
   border-radius: 20px;
   z-index: 0;
 }
-.product1::after{
+.product1::after {
   content: "";
   background-image: url("img/Ellipse\ 58.png");
   position: absolute;
   z-index: 0;
-  bottom:-17px;
+  bottom: -17px;
   left: 42%;
   width: 35px;
-  height: 35px;  
+  height: 35px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
-.product1 span{
+.product1 span {
   content: "";
   background-image: url("img/Group\ 3.png");
   position: absolute;
@@ -242,25 +245,23 @@ height: 211px;
   z-index: 1;
 }
 
-.items{
+.items {
   display: flex;
 }
 
-
-.whyUsImg{
+.whyUsImg {
   position: relative;
 }
 
 .whyUsImg img {
-  width: 450px;
-height: 600px;
+  width: 430px;
+  height: 600px;
   right: 35px;
   position: relative;
   z-index: 1;
 }
 
-
-.whyUsImg::before{
+.whyUsImg::before {
   content: "";
   background-image: url("img/Dot.png");
   width: 260px;
@@ -271,42 +272,39 @@ height: 600px;
   top: -15px;
 }
 
-.whyUs{
+.whyUs {
   display: flex;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
-.whyUsReasons{
+.whyUsReasons {
   margin-top: 80px;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 22px;
-/* or 157% */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
 
-
-color: #6A6A6A;
+  color: #6a6a6a;
 }
 
-.whyUsReasons div:not(.ellipse){
+.whyUsReasons div:not(.ellipse) {
   width: 200px;
   height: 150px;
   margin-right: 38px;
   margin-bottom: 38px;
 }
 
-.whyUsReasons div{
+.whyUsReasons div {
   position: relative;
 }
 
-.whyUsReasons div h5{
- margin: 0;
+.whyUsReasons div h5 {
+  margin: 0;
 }
 
-.ellipse::before{
+.ellipse::before {
   content: "";
   background-image: url("img/Ellipse\ 59.png");
   padding: 16.5px;
@@ -315,20 +313,233 @@ color: #6A6A6A;
   left: 16px;
 }
 
-.whyUsDescription p{
+.whyUsDescription p {
   width: 444px;
   height: 42px;
   font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-/* or 171% */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
 
-
-color: #6A6A6A;
+  color: #6a6a6a;
+}
+.images {
+  display: flex;
+  position: relative;
 }
 
+.img1 {
+  position: relative;
+}
+.img1 img {
+  width: 310px;
+  height: 430px;
+  z-index: 1;
+  position: relative;
+}
 
+.img1::before {
+  content: "";
+  background-image: url("img/Dot\ \(1\).png");
+  width: 260px;
+  height: 176px;
+  position: absolute;
+  z-index: 0;
+  left: -90px;
+  top: -55px;
+}
 
+.images::after {
+  content: "";
+  background-image: url("img/Mask\ group\ \(1\).png");
+  position: absolute;
+  z-index: 2;
+  width: 231px;
+  height: 280px;
+  bottom: 15px;
+  right: 0px;
+}
 
+.img2 img {
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+}
 
+.weHelpYou ul {
+  list-style-type: circle;
+  padding-left: 0;
+  column-count: 2;
+}
+
+.weHelpYou li {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* or 136% */
+  color: #6a6a6a;
+}
+
+.weHelpYou {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.weHelp h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  /* or 121% */
+  color: #2f2f2f;
+}
+
+.weHelp p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #6a6a6a;
+}
+
+.weHelp {
+  margin-left: 40px;
+}
+
+.firstProductDescription img {
+  width: 91px;
+  height: 125px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.secondProductDescription img {
+  width: 113px;
+  height: 123px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.thirdProductDescription img {
+  width: 78px;
+  height: 119px;
+  position: relative;
+  margin-right: 40px;
+}
+
+.firstProductDescription,
+.secondProductDescription,
+.thirdProductDescription {
+  position: relative;
+  display: flex;
+  width: 342px;
+  height: 110px;
+  margin-right: 20px;
+}
+
+.firstProductDescription::before,
+.secondProductDescription::before,
+.thirdProductDescription::before {
+  content: "";
+  background-image: url("img/Rectangle\ 10.png");
+  width: 98px;
+  height: 98px;
+  position: absolute;
+  top: 15px;
+  left: -5px;
+}
+
+.productsDescriptions {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  /* or 157% */
+  color: #6a6a6a;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials p {
+  width: 590px;
+  height: 102px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  /* or 178% */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.testimonials div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 112px;
+}
+
+.testimonials img {
+  width: 58px;
+  height: 58px;
+}
+
+.lessThan,
+.moreThan {
+  position: relative;
+}
+
+.lessThan::after {
+  content: "";
+  background-image: url("img/LessThan.svg");
+  position: absolute;
+  width: 10px;
+  height: 19px;
+  bottom: 48px;
+  left: 23px;
+}
+
+.moreThan::after {
+  content: "";
+  background-image: url("img/MoreThan.svg");
+  position: absolute;
+  width: 10px;
+  height: 19px;
+  bottom: 48px;
+  left: 23px;
+}
+
+.profile {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile h5 {
+  margin-bottom: 0;
+}
+
+.dots img {
+  width: 7px;
+  height: 7px;
+  margin: 10px;
+}
