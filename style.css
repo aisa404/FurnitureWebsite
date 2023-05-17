@@ -10,7 +10,8 @@ body {
   font-family: "Inter";
 }
 
-body > div {
+body > div,
+footer {
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -460,7 +461,6 @@ h2 {
   font-weight: 400;
   font-size: 10px;
   line-height: 15px;
-  /* or 157% */
   color: #6a6a6a;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -483,10 +483,7 @@ h2 {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  /* or 178% */
-
   text-align: center;
-
   color: #000000;
 }
 
@@ -542,4 +539,183 @@ h2 {
   width: 7px;
   height: 7px;
   margin: 10px;
+}
+
+.recentBlog {
+  margin-bottom: 100px;
+}
+
+.recentBlog div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recentBlog h4 {
+  margin-bottom: 0;
+}
+
+.recentBlog p {
+  margin: 0;
+}
+
+.recentBlog img {
+  width: 290px;
+  height: 179px;
+}
+
+.firstPost,
+.secondPost,
+.thirdPost {
+  display: flex;
+  flex-direction: column;
+}
+
+button[type="submit"] div {
+  position: relative;
+  z-index: 0;
+}
+
+button[type="submit"] div::after {
+  content: "";
+  background-image: url("img/paper-plane-solid\ 1.png");
+  position: absolute;
+  width: 29px;
+  height: 27.67px;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 200px;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding-left: 20px;
+}
+
+button[type="submit"] {
+  background-color: transparent;
+  color: white;
+  padding: 0px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button img {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #ffffff;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+footer h4 {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+footer::after {
+  content: "";
+  background-image: url("img/sofa\ 1.png");
+  position: absolute;
+  width: 458px;
+  height: 396.24px;
+  right: 0;
+  top: -100px;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: start;
+}
+
+.footerFirstRow {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6a6a6a;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer p {
+  width: 420px;
+}
+
+.linksColumn {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.socialsLinks {
+  display: flex;
+  padding: 30px 0px;
+}
+
+.socialsLinks div {
+  position: relative;
+  width: 41px;
+  height: 41px;
+  margin-right: 20px;
+  z-index: 0;
+}
+
+.socialsLinks img {
+  left: 13px;
+  top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.socialsLinks div::before {
+  content: "";
+  background-image: url("img/Ellipse\ 71.png");
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  margin-right: 20px;
+  z-index: 0;
+}
+
+.vertical-middle img {
+  vertical-align: middle;
+}
+
+.copyright,
+.copyright ul,
+a {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  color: #6a6a6a;
+}
+
+.copyright p {
+  width: 500px;
+}
+
+.copyright a {
+  margin-left: 10px;
+  text-decoration: none;
 }
